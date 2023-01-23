@@ -12,7 +12,7 @@ namespace OrderedAndUnOrdered
 
         public void Ordered(string str)
         {
-            string text = File.ReadAllText(@"D:\Bridgelab\repos\OrderedAndUnOrdered\OrderedAndUnOrdered\order.txt");
+            string text = File.ReadAllText(@"D:\Bridgelab\repos\OrderedAndUnOrdered\OrderedAndUnOrdered\UnOrdered.txt");
 
             string[] words = text.Split(' ');
 
@@ -65,7 +65,7 @@ namespace OrderedAndUnOrdered
             }
             string concat = string.Concat(array);
             Console.WriteLine(concat);
-            File.WriteAllText(@"D:\Bridgelab\repos\OrderedAndUnOrdered\OrderedAndUnOrdered\order.txt", concat);
+            File.WriteAllText(@"D:\Bridgelab\repos\OrderedAndUnOrdered\OrderedAndUnOrdered\UnOrdered.txt", concat);
 
         }
     }
